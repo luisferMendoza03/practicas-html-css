@@ -1,0 +1,30 @@
+h1{
+    color: #FFFFFF; text-shadow: 0 0 10px #00FF00;/*color de fondo*/
+    margin: 40px;/*margen general*/
+    text-align: center;/*texto alineado*/
+    margin-bottom: 20px;/*margen bajo*/
+    font-size: 60px;/*tamaño de fuente*/
+
+}
+.conten1{
+    display: flex;/*vista flexible*/
+}
+.img1{
+    margin-top: 10px;/*margen superior*/
+    width: 250px;/*ancho del div*/
+    height: 300px;/*alto del div*/
+    margin-left: 550px;/*margen izquierdo*/
+    border-radius: 10px;/*tamaño del borde*/
+}
+h2{
+    text-align: center;/*texto alineado*/
+    color: #FFFFFF; text-shadow: 0 0 10px #00FF00;/*color de sombra*/
+    text-align: center;/*alineacion del texto*/
+}
+.video{
+    position: fixed;/*posicion del video*/
+    top: 0%;/*sin espacio superior*/
+    left: 0;/*lado izquierdo*/
+    width: 100%;/*ancho del video*/
+    z-index: -1;/*indice con menos uno y superposicio*/
+}

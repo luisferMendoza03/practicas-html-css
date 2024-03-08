@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    color: black;
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left{
+    background-color: red;
+    padding: 20px;
+    float: left;
+    width: 20%;
+    color: white;
+    text-align: center;
+}
+
+.main{
+    background-color: orangered;
+    padding: 20px;
+    width: 40%;
+    color: antiquewhite;
+    text-align: center;
+    display: flex;
+}
+
+.right{
+    background-color: coral;
+    width: 60%;
+    color: antiquewhite;
+    text-align: center;
+    display: block;
+    float: right;
+}
+
+@media screen and (maxWidth:100%){
+    .left
+    .main
+    .right{
+        width: 100%;
+    }
+}

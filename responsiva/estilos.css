@@ -1,0 +1,117 @@
+body{
+    margin: 0;/*margen de separacion total a 0*/
+    font-family: 'Times New Roman', Times, serif;/*tipo de letra*/
+    font-optical-sizing: auto;/*tamaño de letra*/
+    font-style: oblique;/*estilo de fuente*/
+    font-weight: 900px;/*tamaño de fuente*/
+    color:white;/*color de letra*/
+}
+.navbar{
+    overflow: hidden;/*recorta contenido*/
+    background-color: cadetblue;/*color de fondo*/
+    display: flex;/*ajuste en linea*/
+    align-items: center;/*alineacion en centro*/
+    justify-content: center;/*justifica el contenido*/
+    position: fixed;/*posiciona el texto*/
+    width: 100%;/*ancho del div*/
+}
+.navbar a:hover{
+    background:black;/*fondo de color negro*/
+    background: white;/*cambia el fondo letra*/
+    cursor: pointer;/*cambia el cursor de forma*/
+}
+@media screen and (max-width:600px){ /*el tipo general de un dispositivo*/
+    .navbar a{/*aplicar estilo a barra de navegacion*/
+        float:none;/*no sera flotante*/
+        display: block;/*acomoda en bloque*/
+    }
+}
+.navbar a{/*aplicar estilos a barra de navegacion*/
+    float:right;/*flotante lado derecho*/
+    display: block;/*vista en bloque*/
+    color: black;/*color de letra*/
+    text-align: center;/*texto alineado en el centro*/
+    padding: 14px 16px;/*padding arriba y abajo*/
+    text-decoration: none;/*sin decoracion*/
+    font-size: 17px;/*tamaño de la letra*/
+}
+h1{
+    padding-top: 50px;/*padding arriba*/
+    text-align: center;/*texto alineado al centro*/
+    color: red;/*color de la letra*/
+}
+.container .backgroundstyle p{
+    width: 95%;/*ancho del div*/
+    overflow: auto;/*recorta el contenido*/
+    padding: 15px;/*padding general*/
+    height: 490px;/*alto del contenedor*/
+}
+.backgroundstyle{
+    padding: 20px;/*padding general del div*/
+    margin-top: 0px;/*margin superior*/
+    background-color: black;/*en caso de no hallar imagen*/
+    height: 600px;/*alto del div*/
+    background-image: url(future.jpg);/*imagen de fonde*/
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-attachment: fixed;/*multiples imagenes de fondo*/
+    background-size: 100% 100%;/*tamaño del fondo de imagen*/
+}
+.home1{
+    padding: 20px;/*padding a todo el div*/
+    margin-top: 0px;/*margen posterior*/
+    background-color: black;/*en caso de no hallar imagen*/
+    height: 700px;/*alto del div*/
+    background-image: url(fuji.PNG);/*fondo de imagen*/
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-attachment: fixed;/*multiples imagenes*/
+    background-size: 100% 100%;/*cambia el tamaño de fondo*/
+}
+.backcontact{
+    padding: 20px;/*padding total*/
+    margin-top: 0px;/*margen posterior*/
+    background-color: black;/*en caso de no hallar imagen*/
+    height: 700px;/*alto del div*/
+    background-image: url(mili.PNG);/*imagen de fondo*/
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-attachment: fixed;/*multiples imagenes*/
+    background-size: 100% 100%;/*cambia el tamaño del fondo*/
+}
+.mision1{
+    padding: 20px;/*paddin general*/
+    margin-top: 0px;/*sin margen superior*/
+    background-color: black;/*en caso de no hallar imagen*/
+    height: 700px;/*alto del div*/
+    background-image: url(popo.PNG);/*imagen de fondo*/
+    background-repeat: no-repeat;/*no repite la imagen*/
+    background-attachment: fixed;/*multiples imagenes debajo*/
+    background-size: 100% 100%;/*cambia el tamaño de las imagenes*/
+}
+.vision1{
+    padding: 20px;/*padding general*/
+    margin-top: 0px;/*margen superior*/
+    background-color: black;/*en caso de no hallar imagen*/
+    height: 700px;/*alto del div*/
+    background-image: url(linterna.webp);/*imagen de fondo*/
+    background-repeat: no-repeat;/*no repite la imagen*/
+    background-attachment: fixed;/*multiples imagenes debajo*/
+    background-size: 100% 100%;/*cambia el tamaño de la imagen de fondo*/
+}
+.nosotros1{
+    padding: 20px;/*padding*/
+    margin-top: 0px;/*margen superior*/
+    background-color: black;/*en caso de no hallar imagen*/
+    height: 700px;/*alto del div*/
+    background-image: url(tigre.jpeg);/*imagen de fondo*/
+    background-repeat: no-repeat;/*no repite las imagenes*/
+    background-attachment: fixed;/*multiples imagenes de fondo*/
+    background-size: 100% 100%;/*cambia el tamaño del fondo*/
+}
+.imgContainer img{
+    border-radius: 50%;/*tamaño del radio*/
+    height: 300px;/*alto del div*/
+    width: 300px;/*ancho del div*/
+    display: block;/*alineacion tipo bloque*/
+    margin-left: auto;/*margen izquierdo*/
+    margin-right: auto;/*margen derecho*/
+    box-shadow: 1px 10px 10px 10px rgb(34, 56, 200);/*color de fondo*/
+}

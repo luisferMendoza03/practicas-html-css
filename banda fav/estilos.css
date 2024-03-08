@@ -1,0 +1,28 @@
+.encab1{
+    text-align: center;/*texto alineado centro*/
+}
+.titulosong{
+    padding-top: 100px;/*paddin a todo*/
+    color: white;/*color de letra*/
+    font-family: 'Times New Roman', Times, serif;/*tipo de fuente*/
+}
+.imagen1{
+    margin-top: 30px;/*margen superior*/
+    height: 200px;/*ancho de div*/
+    width: 300px;/*alto del div*/
+}
+
+h2{
+    text-align: left;/*texto alineado*/
+    color: white;/*color de letra*/
+    text-align: center;/*texto alineado*/
+    font-weight: 200;/*fuente y ancho*/
+    text-shadow: -1px 0 red, 0 1px red,1px 0 red,0 -1px red;/*color flourescente*/
+}
+.text{
+    margin: 100px;/*margen para todo*/
+}
+h3{
+    color: white;/*color de letra*/
+
+}

@@ -1,0 +1,79 @@
+body{
+    background-image: url();/*ruta de la imagen*/
+    background-size: cover;/*tamaño del fondo*/
+    background-repeat: no-repeat;/*no se repite el fondo*/
+    background-color: brown;
+}
+/*estilos para el disco de vinilo*/
+.console{
+    width: 500px;/*ancho de la consola*/
+    height: 500px;/*alto de la consola*/
+    border: 5px solid #000;/*tipo de borde*/
+    border-radius: 20%;/*tamaño del borde*/
+    position: relative;/*psosicion del div*/
+    overflow: hidden;/*recorta el contenido de mas*/
+    display: block;/*acomoda en bloque*/
+    margin-left: auto;/*margen automatico*/
+    margin-right: auto;/*margen derecho automatico*/
+    margin-top: 70px;/*margen arriba*/
+    align-items: center;/*alineacion central*/
+    background-image: url();/*ruta de la imagen*/
+    background-size: cover;/*ajusta el tamaño la imagen para cubrir todo el div*/
+    background-repeat: no-repeat;/*evita que la imagen se repita*/
+}
+.vinilo{
+    width: 400px;/*ancho del vinilo*/
+    height: 400px;/*alto del vinilo*/
+    background-color: #333;/*color del vinilo*/
+    border-radius: 50%;/*radio del borde*/
+    position: absolute;/*posicion absoluta*/
+    display: block;/*alineacion en bloque*/
+    margin-left: 55px;/*margen en pixeles*/
+    margin-top: 55px;/*margen arriba*/
+}
+.album{
+    width: 250px;/*ancho de la imagen album*/
+    height: 250px;/*alto de la imagen*/
+    color: white;/*color del album de fondo*/
+    border-radius: 15%;/*radio del borde*/
+    position: relative;/*posicion del album*/
+    margin-left: auto;/*margen izquierdo*/
+    margin-right: auto;/*margen derecho*/
+    margin-top: -315px;/*margen arriba*/
+    background-image: url(wekend.jpg);/*ruta de la imagen*/
+    background-size: cover;/*ajusta el tamaño la imagen para cubrir todo el div*/
+    background-repeat: no-repeat;/*evita que la imagen se repita*/
+}
+/*estilos para el agujero central del vinilo*/
+.agujero{
+    width: 20px;/*ancho del agujero*/
+    height: 20px;/*alto del agujero*/
+    background-color: #000;/*color del agujero*/
+    border-radius: 50%;/*borde del agujero*/
+    position: absolute;/*posicion del agujero*/
+    top:50%;/*arriba del agujero*/
+    left: 50%;/*lado izquierdo*/
+    transform: translate(-50%,-50%);/*transforma los grados*/
+}
+.linea1{
+    background-color: white;/*color de la linea dentro del vinilo*/
+    border-radius: 50%;/*radio del borde*/
+    position: relative;/*posicion para equilibrarse con el vinilo*/
+    top: 50%;/*arriba del vinilo*/
+    left: 50%;/*lado izquierdo*/
+    transform: translate(-50%,-50%);/*recoloca un elemento en el eje horizontal y/o vertical*/
+}
+@keyframes girar{/*controlar los pasos intermedios en una secuencia de animación*/
+    from{
+        transform: rotate(0deg);/*grados de inicio*/
+    }
+    to{
+        transform: rotate(360deg);/*grados finales*/
+    }
+}
+.album{
+    animation: girar 10s linear infinite;/*controlar los pasos intermedios en una secuencia de animación*/
+}
+.vinilo{
+    animation: girar 10s linear infinite;/*controlar los pasos intermedios en una secuencia de animación*/
+}

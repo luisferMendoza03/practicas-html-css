@@ -1,0 +1,56 @@
+.popotitle{
+    margin: 20px;/*margen total*/
+    color: white;/*color de letra*/
+    text-align: right;/*texto alineado a la derecha*/
+}
+.fujititle{
+    margin: 20px;/*margen total a todos los lados*/
+    color: white;/*color de letra*/
+    text-align: right;/*texto hacia la derecha*/
+}
+.kilititle{
+    margin: 20px;/*margen total*/
+    color: white;/*color de letra*/
+    text-align: right;/*texto alineado*/
+}
+.popotext{
+    color: white;/*color de fuente*/
+    font-style: oblique;/*tipo de letra*/
+    text-align: center;/*atexto alineado a la derecha*/
+}
+.fujitext{
+    color: white;/*acolor de fuente*/
+    font-style: oblique;/*tipo de letra*/
+    text-align: center;/*texto alineado*/
+}
+.kilitext{
+    color: white;/*color de letra*/
+    font-style: oblique;/*tipo de fuente*/
+    text-align: center;/*texto alineado*/
+}
+.conte1{
+    display: flex;/*alineacion en linea*/
+    justify-content: center;/*justificacion*/
+    background-color: darkred;/*fondo de color*/
+}
+.conte2{
+    display: flex;/*display del contenedor*/
+    justify-content: center;/*contenido justificado*/
+}
+.conte3{
+    display: flex;/*display en linea*/
+    justify-content: center;/*contenido justificado*/
+    background-color: darkred;/*fondo de color*/
+}
+.imagen1{
+    width: 400px;/*ancho de la imagen*/
+    height: 200px;/*alto del div*/
+}
+.imagen2{
+    width: 400px;/*ancho del div*/
+    height: 200px;/*alto del div*/
+}
+.imagen3{
+    width: 400px;/*ancho del div*/
+    height: 200px;/*alto del div*/
+}

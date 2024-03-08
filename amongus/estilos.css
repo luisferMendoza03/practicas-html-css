@@ -1,0 +1,154 @@
+html {
+    padding: 0;/*padding general*/
+    margin: 0;/*sin margen*/
+    box-sizing: border-box;/*tamaño del cajon*/
+    background-color: rgb(12, 15, 15);/*color de fondo*/
+  }
+  
+  :root {
+    --base-color: #630251;/*color de base*/
+    --lighter-base-color: #f00bba;/*color brillante*/
+    --face-color: #73989e;/*color de cara*/
+    --lighter-face-color: #CAE8ED;/*color claro*/
+    --border-color: #000000; /*color del borde*/
+  }
+  
+  .body {
+    position: relative;/*posicion del div*/
+    margin: 100px 150px;/*margen izq y der*/
+    width: 155px;/*ancho del div*/
+    height: 230px;/*alto del div*/
+    background-color: var(--base-color);/*color del fondo*/
+    
+    border: 12px solid var(--border-color);/*tamaño y color del borde*/
+    border-radius: 70px 85px 70px 70px;/*tamaño del borde*/
+  }
+  
+  .body-light-part {/*parte del div*/
+    position: absolute;/*posicion absoluta*/
+    top: 0;/*sin top*/
+    right: 0;/*sin espacio a la derecha*/
+    z-index: 1;/*resta 1 al inicio*/
+    width: 95%;/*ancho del div*/
+    height: 90%;/*alto del div*/
+    background-color: var(--lighter-base-color);/*color del div*/
+    transform: rotate(-2deg);/*giro del div*/
+    border-radius: 40% 50% 36% 30%;/*formato al borde*/
+  }
+  
+  .face{ 
+    position: absolute;/*posicion absoluta*/
+    right: -20px;/*pixeles hacia la derecha*/
+    top: 25px;/*arriba con 25px*/
+    z-index: 2;/*resta indice de 2 por ciento*/
+    background-color: var(--face-color);/*fondo de color*/
+    width: 130px;/*ancho del div*/
+    height: 90px;/*alto del div*/
+    transform: rotate(-4deg);/*imagenes detras de fondo*/
+    border: 12px solid var(--border-color);/*borde con color y tamaño*/
+    border-radius: 70px 90px 110px 110px;/*tamaño del borde*/
+  }
+  
+  .face-light-part {
+    position: relative;/*posicion relativa*/
+    width: 94px;/*ancho del div*/
+    height: 50px;/*alto del div*/
+    margin: 0px 12px;/*margen izq y der*/
+    background-color: var(--lighter-face-color);/*color de fondo*/
+    border-radius: 30% 40% 55% 50%;/*medidas del borde*/
+    display: inline-block;/*display en linea*/
+  }
+  
+  .shimmer {
+    position: relative;/*posicion relativa del div*/
+    margin: 4px 25px;/*margen*/
+    width: 50px;/*ancho del div*/
+    height: 20px;/*alto del div*/
+    background-color: white;/*color de fondo*/
+    border-radius: 40% 50% 50% 40%;/*tamaño del borde*/
+  }
+  
+  .backpack{
+    position: absolute;/*posicion absoluta*/
+    left: 0;/*sin espacio a la izquierda*/
+    top: 65px;/*arriba con 65px*/
+    width: 50px;/*ancho*/
+    height: 150px;/*alto*/
+    transform: translate(-100%);/*tranfrmacion de la imagen*/
+    background-color: var(--base-color);/*color de fondo*/
+    border: 12px solid var(--border-color);/*borde esterior*/
+    border-radius: 40% 0 0 50%;/*borde y radio*/
+  }
+  
+  .backpack-light-part {
+    margin-left: 2px;/*margen izquierdo*/
+    height: 25px;/*ancho de div*/
+    width: calc(100% - 2px);/*alto*/
+    background-color: var(--lighter-base-color);/*color de fondo*/
+    border-radius: 50% 0 0 20%;/*tamaño del borde*/
+  }
+  
+  .leg-left-under {
+    position: absolute;/*posicion final*/
+    bottom: 0;/*debajo*/
+    left: -12px;/*ixquierda*/
+    width: 70px;/*ancho */
+    height: 60px;/*alto*/
+    background-color: var(--base-color);/*fondo de color*/
+    border-left: 12px solid var(--border-color);/*borde estilo*/
+  }
+  
+  
+  .leg-left {
+    position: absolute;/*posicion absoluta*/
+    bottom: 0;/*debajo*/
+    left: -12px;/*izquierda*/
+    width: 65px;/*ancho del div*/
+    height: 55px;/*alto del div*/
+    transform: translateY(55px);/*atransformacionde imagen*/
+    background-color: var(--base-color);/*fondo de color*/
+    border: 12px solid var(--border-color);/*borde de color*/
+    border-top: none;/*sin borde debajo*/
+    border-radius: 0 0 40% 60%;/*tamaño del borde*/
+  }
+  
+  .leg-right-under {
+    position: absolute;/*posicion absoluta*/
+    bottom: -4px;/*debajo*/
+    left: 70px;/*izquierda*/
+    width: 65px;/*ancho*/
+    height: 32px;/*alto*/
+    background-color: var(--base-color);/*color de fondo*/
+    border-right: 12px solid var(--border-color);/*borde y estilo*/
+  }
+  
+  .leg-right {
+    position: absolute;/*posiicion absoluta*/
+    bottom: -50px;/*debajo del div*/
+    left: 70px;/*izquierda*/
+    width: 65px;/*ancho del div*/
+    height: 50px;/*alto del div*/
+    background-color: var(--base-color);/*fondo de colo*/
+    border: 12px solid var(--border-color);/*borde de tamaño*/
+    border-top: none;/*borde superior*/
+    border-radius: 0 0 40% 60%;/*radio del borde*/
+  }
+
+  .videodefondo{
+    position: fixed;/*posicion del video*/
+    right: 0;/*sin espacio derecho*/
+    bottom: 0;/*debajo de div*/
+    min-width: 100%;/*cubre la pantalla*/
+    min-height: 100%;/*cubre espacios*/
+    z-index:0;/*indice menor*/
+}
+.contenedor {
+    margin-top: 55px;/*margen superior*/
+    margin-left: 40px;/*mergen ixquierdo*/
+    display: flex;/*display en linea*/
+    justify-content: center;/*justificacion del contenido*/
+    cursor: context-menu;/*cambia el cursor*/
+    text-align: center;/*alineacion del texto*/
+    align-items: center;/*centro de items*/
+    position: absolute;/*posicion cubre absoluta*/
+}
